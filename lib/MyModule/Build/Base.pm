@@ -5595,6 +5595,7 @@ sub copy_if_modified {
   }
 
   # Create parent directories
+  my $dir = File::Basename::dirname($to_path);
   print "DEBUG: current directory is : ", cwd(), "\n";
   print "DEBUG: creating directory : ", $dir, "\n";
   File::Path::mkpath(File::Basename::dirname($to_path), 0, oct(777));
