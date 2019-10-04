@@ -469,17 +469,17 @@ But not every build system honors C<configure_requires> yet.  Here's
 how you can ship a copy of MyModule::Build, but still use a newer
 installed version to take advantage of any bug fixes and upgrades.
 
-First, install MyModule::Build into F<Your-Project/inc/Module-Build>.
+First, install MyModule::Build into F<Your-Project/inc/MyModule-Build>.
 CPAN will not index anything in the F<inc> directory so this copy will
 not show up in CPAN searches.
 
-    cd Module-Build
-    perl Build.PL --install_base /path/to/Your-Project/inc/Module-Build
+    cd MyModule-Build
+    perl Build.PL --install_base /path/to/Your-Project/inc/MyModule-Build
     ./Build test
     ./Build install
 
 You should now have all the MyModule::Build .pm files in
-F<Your-Project/inc/Module-Build/lib/perl5>.
+F<Your-Project/inc/MyModule-Build/lib/perl5>.
 
 Next, add this to the top of your F<Build.PL>.
 
@@ -496,7 +496,7 @@ Next, add this to the top of your F<Build.PL>.
     $Installed_MB = 0 if $?;
 
     # Use our bundled copy of MyModule::Build if it's newer than the installed.
-    unshift @INC, "inc/Module-Build/lib/perl5" if $Bundled_MB > $Installed_MB;
+    unshift @INC, "inc/MyModule-Build/lib/perl5" if $Bundled_MB > $Installed_MB;
 
     require MyModule::Build;
 

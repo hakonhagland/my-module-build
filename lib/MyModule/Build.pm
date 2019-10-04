@@ -487,7 +487,7 @@ any path information.
 
 Example:
 
-  ./Build ppd --codebase "MSWin32-x86-multi-thread/Module-Build-0.21.tar.gz"
+  ./Build ppd --codebase "MSWin32-x86-multi-thread/MyModule-Build-0.21.tar.gz"
 
 =item ppmdist
 
@@ -1065,13 +1065,13 @@ signature or the like, if available.  See C<cons> for an example.
 Ken Williams <kwilliams@cpan.org>
 
 Development questions, bug reports, and patches should be sent to the
-Module-Build mailing list at <module-build@perl.org>.
+MyModule-Build mailing list at <module-build@perl.org>.
 
 Bug reports are also welcome at
-<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Module-Build>.
+<http://rt.cpan.org/NoAuth/Bugs.html?Dist=MyModule-Build>.
 
 The latest development version is available from the Git
-repository at <https://github.com/Perl-Toolchain-Gang/Module-Build>
+repository at <https://github.com/Perl-Toolchain-Gang/MyModule-Build>
 
 
 =head1 COPYRIGHT

@@ -1086,7 +1086,7 @@ code that creates them.
   $build->args($key, $value);
 
 This method is the preferred interface for retrieving the arguments passed via
-command line options to F<Build.PL> or F<Build>, minus the Module-Build
+command line options to F<Build.PL> or F<Build>, minus the MyModule-Build
 specific options.
 
 When called in a scalar context with no arguments, this method returns a

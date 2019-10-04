@@ -72,18 +72,18 @@ ok( -e File::Spec->catfile( $dist_inc, 'latest.pm' ),
   "dist_dir/inc/latest.pm created"
 );
 
-ok( -d File::Spec->catdir( $dist_inc, 'inc_Module-Build' ),
+ok( -d File::Spec->catdir( $dist_inc, 'inc_MyModule-Build' ),
   "dist_dir/inc/inc_Module_Build created"
 );
 
 my $mb_file =
-  File::Spec->catfile( $dist_inc, qw/inc_Module-Build Module Build.pm/ );
+  File::Spec->catfile( $dist_inc, qw/inc_MyModule-Build Module Build.pm/ );
 
 ok( -e $mb_file,
   "dist_dir/inc/inc_Module_Build/MyModule/Build.pm created"
 );
 
-ok( -e File::Spec->catfile( $dist_inc, qw/inc_Module-Build Module Build Base.pm/ ),
+ok( -e File::Spec->catfile( $dist_inc, qw/inc_MyModule-Build Module Build Base.pm/ ),
   "dist_dir/inc/inc_Module_Build/MyModule/Build/Base.pm created"
 );
 

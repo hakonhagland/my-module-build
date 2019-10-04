@@ -48,7 +48,7 @@ of the modules indicated above before proceeding with this installation
 
 EOF
     unless (
-      $self->dist_name eq 'Module-Build' ||
+      $self->dist_name eq 'MyModule-Build' ||
       $ENV{PERL5_CPANPLUS_IS_RUNNING} || $ENV{PERL5_CPAN_IS_RUNNING}
     ) {
       $self->log_warn(
@@ -1482,7 +1482,7 @@ sub auto_config_requires {
 
   # add current MyModule::Build to configure_requires if there
   # isn't one already specified (but not ourself, so we're not circular)
-  if ( $self->dist_name ne 'Module-Build'
+  if ( $self->dist_name ne 'MyModule-Build'
     && $self->auto_configure_requires
     && ! exists $p->{configure_requires}{'MyModule::Build'}
   ) {
@@ -4227,7 +4227,7 @@ sub _write_default_maniskip {
 # Avoid archives of this distribution
 EOF
 
-  # Skip, for example, 'Module-Build-0.27.tar.gz'
+  # Skip, for example, 'MyModule-Build-0.27.tar.gz'
   $content .= '\b'.$self->dist_name.'-[\d\.\_]+'."\n";
 
   print $fh $content;

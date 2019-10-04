@@ -2,7 +2,7 @@
 abstract: 'Build and install Perl modules'
 author:
   - 'Ken Williams <kwilliams@cpan.org>'
-  - 'Module-Build mailing list at <module-build@perl.org>.'
+  - 'MyModule-Build mailing list at <module-build@perl.org>.'
 build_requires:
   CPAN::Meta::YAML: '0.003'
   File::Temp: '0.15'
@@ -24,7 +24,7 @@ license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: '1.4'
-name: Module-Build
+name: MyModule-Build
 provides:
   MyModule::Build:
     file: lib/MyModule/Build.pm
@@ -114,6 +114,6 @@ resources:
   IRC: irc://irc.perl.org/#toolchain
   MailingList: mailto:module-build@perl.org
   license: http://dev.perl.org/licenses/
-  repository: https://github.com/Perl-Toolchain-Gang/Module-Build
+  repository: https://github.com/Perl-Toolchain-Gang/MyModule-Build
 version: '0.4229'
 x_serialization_backend: 'CPAN::Meta::YAML version 0.018'

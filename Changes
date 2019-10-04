@@ -1776,7 +1776,7 @@ Summary of major changes since 0.35:
 
 0.2808_01 - Wed Oct 24 11:51:25 2007
 
- - All .pm files in the Module-Build distribution (except for
+ - All .pm files in the MyModule-Build distribution (except for
    M::B::Version.pm, which is kind of tied to version.pm) now have the
    same $VERSION number explicitly specified.
 
@@ -2841,7 +2841,7 @@ Summary of major changes since 0.35:
    file and creating the META.yml file.  [Spotted by Dave Rolsky]
 
  - On Win32, where a single directory might be known variously as
-   "Module-Build-0.25_03" or "MODULE~1.25_", we now use
+   "MyModule-Build-0.25_03" or "MODULE~1.25_", we now use
    Win32::GetShortPathName($cwd) to verify that the 'Build' script is
    being run from the correct directory, rather than just a string
    comparison.
