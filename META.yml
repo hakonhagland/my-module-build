@@ -27,61 +27,61 @@ meta-spec:
 name: Module-Build
 provides:
   MyModule::Build:
-    file: lib/Module/Build.pm
+    file: lib/MyModule/Build.pm
     version: '0.4229'
   MyModule::Build::Base:
-    file: lib/Module/Build/Base.pm
+    file: lib/MyModule/Build/Base.pm
     version: '0.4229'
   MyModule::Build::Compat:
-    file: lib/Module/Build/Compat.pm
+    file: lib/MyModule/Build/Compat.pm
     version: '0.4229'
   MyModule::Build::Config:
-    file: lib/Module/Build/Config.pm
+    file: lib/MyModule/Build/Config.pm
     version: '0.4229'
   MyModule::Build::Cookbook:
-    file: lib/Module/Build/Cookbook.pm
+    file: lib/MyModule/Build/Cookbook.pm
     version: '0.4229'
   MyModule::Build::Dumper:
-    file: lib/Module/Build/Dumper.pm
+    file: lib/MyModule/Build/Dumper.pm
     version: '0.4229'
   MyModule::Build::Notes:
-    file: lib/Module/Build/Notes.pm
+    file: lib/MyModule/Build/Notes.pm
     version: '0.4229'
   MyModule::Build::PPMMaker:
-    file: lib/Module/Build/PPMMaker.pm
+    file: lib/MyModule/Build/PPMMaker.pm
     version: '0.4229'
   MyModule::Build::Platform::Default:
-    file: lib/Module/Build/Platform/Default.pm
+    file: lib/MyModule/Build/Platform/Default.pm
     version: '0.4229'
   MyModule::Build::Platform::MacOS:
-    file: lib/Module/Build/Platform/MacOS.pm
+    file: lib/MyModule/Build/Platform/MacOS.pm
     version: '0.4229'
   MyModule::Build::Platform::Unix:
-    file: lib/Module/Build/Platform/Unix.pm
+    file: lib/MyModule/Build/Platform/Unix.pm
     version: '0.4229'
   MyModule::Build::Platform::VMS:
-    file: lib/Module/Build/Platform/VMS.pm
+    file: lib/MyModule/Build/Platform/VMS.pm
     version: '0.4229'
   MyModule::Build::Platform::VOS:
-    file: lib/Module/Build/Platform/VOS.pm
+    file: lib/MyModule/Build/Platform/VOS.pm
     version: '0.4229'
   MyModule::Build::Platform::Windows:
-    file: lib/Module/Build/Platform/Windows.pm
+    file: lib/MyModule/Build/Platform/Windows.pm
     version: '0.4229'
   MyModule::Build::Platform::aix:
-    file: lib/Module/Build/Platform/aix.pm
+    file: lib/MyModule/Build/Platform/aix.pm
     version: '0.4229'
   MyModule::Build::Platform::cygwin:
-    file: lib/Module/Build/Platform/cygwin.pm
+    file: lib/MyModule/Build/Platform/cygwin.pm
     version: '0.4229'
   MyModule::Build::Platform::darwin:
-    file: lib/Module/Build/Platform/darwin.pm
+    file: lib/MyModule/Build/Platform/darwin.pm
     version: '0.4229'
   MyModule::Build::Platform::os2:
-    file: lib/Module/Build/Platform/os2.pm
+    file: lib/MyModule/Build/Platform/os2.pm
     version: '0.4229'
   MyModule::Build::PodParser:
-    file: lib/Module/Build/PodParser.pm
+    file: lib/MyModule/Build/PodParser.pm
     version: '0.4229'
 recommends:
   ExtUtils::Install: '0.3'

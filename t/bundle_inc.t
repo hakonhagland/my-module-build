@@ -80,11 +80,11 @@ my $mb_file =
   File::Spec->catfile( $dist_inc, qw/inc_Module-Build Module Build.pm/ );
 
 ok( -e $mb_file,
-  "dist_dir/inc/inc_Module_Build/Module/Build.pm created"
+  "dist_dir/inc/inc_Module_Build/MyModule/Build.pm created"
 );
 
 ok( -e File::Spec->catfile( $dist_inc, qw/inc_Module-Build Module Build Base.pm/ ),
-  "dist_dir/inc/inc_Module_Build/Module/Build/Base.pm created"
+  "dist_dir/inc/inc_Module_Build/MyModule/Build/Base.pm created"
 );
 
 # Force bundled M::B to a higher version so it gets loaded

@@ -2539,10 +2539,10 @@ Summary of major changes since 0.35:
    use 'install_path' to override specific paths or add paths for
    additional kinds of targets.
 
- - Split the main documentation from 'Module/Build.pm' into two
+ - Split the main documentation from 'MyModule/Build.pm' into two
    sections. The user level documentation and overview remains in
-   'Module/Build.pm', while a new document,
-   'Module/Build/Authoring.pod', has been created for module authors.
+   'MyModule/Build.pm', while a new document,
+   'MyModule/Build/Authoring.pod', has been created for module authors.
 
  Minor changes:
 
@@ -2592,7 +2592,7 @@ Summary of major changes since 0.35:
 
  - The simple get/set accessor methods for all the 'parameters' like
    verbose(), license(), etc. now have auto-generated documentation in
-   Module/Build.pm.
+   MyModule/Build.pm.
 
  - Created a Cookbook entry for 'Adding new elements to the install
    process'
