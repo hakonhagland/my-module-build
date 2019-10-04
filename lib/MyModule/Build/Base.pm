@@ -5595,7 +5595,11 @@ sub copy_if_modified {
   }
 
   # Create parent directories
+  print "DEBUG: current directory is : ", cwd(), "\n";
+  print "DEBUG: creating directory : ", $dir, "\n";
   File::Path::mkpath(File::Basename::dirname($to_path), 0, oct(777));
+  my $exists = ( -d $dir ) ? "yes" : "no";
+  print "DEBUG: after mkpath: directory $dir exists : ", $exists, "\n";
 
   $self->log_verbose("Copying $file -> $to_path\n");
 
